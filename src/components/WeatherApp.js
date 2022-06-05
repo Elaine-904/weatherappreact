@@ -20,6 +20,7 @@ export default function WeatherApp() {
       }
 
     return (
+      <>
         <div className="card">
             <div className="search">
                 <input
@@ -30,9 +31,9 @@ export default function WeatherApp() {
                 placeholder='Enter city(e.g.Auckland)...'
                 type="text" />
             </div>
-            <WeatherDetail detail={detail} />
-            
         </div>
+        <WeatherDetail detail={detail} />
+        </>
         
     );
 }

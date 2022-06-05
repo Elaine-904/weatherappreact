@@ -1,6 +1,6 @@
 export default function WeatherLoad(){
     return(
-        <div >
+        <div className="loadcard">
             <h1 className="temp"> ....°C</h1>
             <div className="info">
                 <img src={`https://openweathermap.org/img/wn//04n.png`}

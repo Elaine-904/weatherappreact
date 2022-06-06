@@ -1,12 +1,14 @@
 import WeatherLoad from "./WeatherLoad";
+import { useEffect } from "react";
 
 export default function WeatherDetail({ detail }) {
-   
+    
     if (!detail) {
         return (
             <WeatherLoad/>
         );
     }
+
     return (
         <div style={{
             background:  `url("https://source.unsplash.com/1600x900/?${detail.weather[0].description}")` ,
